@@ -1,8 +1,11 @@
 const ProjectLegitimacy = () => {
   return (
     <section className="self-stretch bg-secondary-s10 flex flex-row items-center justify-start pt-[212px] pb-[78px] pr-[120px] pl-[154px] box-border gap-[172px] max-w-full shrink-0 text-left text-21xl text-secondary font-montserrat lg:flex-wrap lg:gap-[86px] lg:pl-[77px] lg:pr-[60px] lg:box-border mq450:gap-[21px] mq450:pt-[90px] mq450:pb-[33px] mq450:box-border mq1050:pt-[138px] mq1050:pb-[51px] mq1050:box-border mq750:gap-[43px] mq750:pl-[38px] mq750:pr-[30px] mq750:box-border">
-      <div className="h-[777px] w-[1440px] relative bg-secondary-s10 hidden max-w-full" />
-      <div className="w-[490px] flex flex-col items-start justify-start gap-[36px] min-w-[490px] max-w-full lg:flex-1 mq1050:min-w-full mq750:gap-[18px]">
+      {/* <div className="h-[777px] w-[1440px] relative bg-secondary-s10 hidden max-w-full" /> */}
+      <div
+        id="whoAreWe"
+        className=" w-[490px] flex flex-col items-start justify-start gap-[36px] min-w-[490px] max-w-full lg:flex-1 mq1050:min-w-full mq750:gap-[18px]"
+      >
         <div className="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full">
           <h1 className="m-0 w-[422px] h-[147px] relative text-inherit font-bold font-inherit inline-block max-w-full z-[1] mq450:text-5xl mq1050:text-13xl">
             <span>{`On a way to Craft a `}</span>

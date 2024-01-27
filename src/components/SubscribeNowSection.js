@@ -1,6 +1,9 @@
-const QuickAccessFrame = () => {
+const SubscribeNowSection = () => {
   return (
-    <section className="w-[1280px] flex flex-row items-start justify-start pt-0 px-5 pb-20 box-border max-w-full shrink-0 text-center text-13xl text-white font-montserrat mq450:pb-[52px] mq450:box-border">
+    <section
+      id="contact"
+      className=" w-[1280px] flex flex-row items-start justify-start pt-0 px-5 pb-20 box-border max-w-full shrink-0 text-center text-13xl text-white font-montserrat mq450:pb-[52px] mq450:box-border"
+    >
       <div className="flex-1 rounded-mini bg-secondary flex flex-row flex-wrap items-center justify-start relative gap-[23px] max-w-full z-[1]">
         <div className="self-stretch w-[1240px] relative rounded-mini bg-secondary hidden max-w-full z-[0]" />
         <img
@@ -47,4 +50,4 @@ const QuickAccessFrame = () => {
   );
 };
 
-export default QuickAccessFrame;
+export default SubscribeNowSection;

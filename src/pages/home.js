@@ -1,12 +1,12 @@
-import FrameComponent4 from "../components/FrameComponent4";
+import HeroSection from "../components/HeroSection";
 import ProjectLegitimacy from "../components/ProjectLegitimacy";
 import FrameComponent3 from "../components/FrameComponent3";
-import FrameComponent2 from "../components/FrameComponent2";
+import InvestSection from "../components/InvestSection";
 import FrameComponent1 from "../components/FrameComponent1";
 import FrameComponent from "../components/FrameComponent";
 import HowToStart from "../components/HowToStart";
 import ProjectAccessFrame from "../components/ProjectAccessFrame";
-import QuickAccessFrame from "../components/QuickAccessFrame";
+import SubscribeNowSection from "../components/SubscribeNowSection";
 import MainHeader from "../components/MainHeader";
 
 const HomePage = () => {
@@ -24,10 +24,10 @@ const HomePage = () => {
         src="/group@2x.png"
       />
 
-      <FrameComponent4 />
+      <HeroSection />
       <ProjectLegitimacy />
       <FrameComponent3 />
-      <FrameComponent2 />
+      <InvestSection />
       <FrameComponent1 />
       <section className="w-[1144px] flex flex-col items-center justify-start py-0 px-5 box-border gap-[116px] min-h-[707px] max-w-full shrink-0 text-center text-21xl text-secondary font-montserrat lg:gap-[58px] mq750:gap-[29px]">
         <div className="w-[495px] flex flex-col items-center justify-start gap-[16px] max-w-full">
@@ -69,7 +69,7 @@ const HomePage = () => {
           <ProjectAccessFrame />
         </div>
       </section>
-      <QuickAccessFrame />
+      <SubscribeNowSection />
       <MainHeader />
     </div>
   );

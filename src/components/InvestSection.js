@@ -1,8 +1,11 @@
 import LinkFrame from "./LinkFrame";
 
-const FrameComponent2 = () => {
+const InvestSection = () => {
   return (
-    <section className="w-[1280px] flex flex-col items-start justify-start py-0 px-5 box-border gap-[56px] min-h-[827px] max-w-full shrink-0 text-left text-21xl text-secondary font-montserrat mq750:gap-[28px]">
+    <section
+      id="investNow"
+      className="w-[1280px] flex flex-col items-start justify-start py-0 px-5 box-border gap-[56px] min-h-[827px] max-w-full shrink-0 text-left text-21xl text-secondary font-montserrat mq750:gap-[28px]"
+    >
       <div className="self-stretch flex flex-row items-center justify-between gap-[20px] max-w-full mq750:flex-wrap">
         <h1 className="m-0 h-[98px] w-[449px] relative text-inherit font-bold font-inherit inline-block shrink-0 max-w-full z-[1] mq450:text-5xl mq1050:text-13xl">
           <span>{`Invest in Tomorrow `}</span>
@@ -38,4 +41,4 @@ const FrameComponent2 = () => {
   );
 };
 
-export default FrameComponent2;
+export default InvestSection;

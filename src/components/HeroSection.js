@@ -1,6 +1,6 @@
 import Text1 from "./Text1";
 
-const FrameComponent4 = () => {
+const HeroSection = () => {
   return (
     <section
       className="self-stretch flex flex-row items-start justify-start relative max-w-full shrink-0 text-left text-5xl text-white  font-montserrat bg-cover bg-center min-h-screen"
@@ -51,16 +51,24 @@ const FrameComponent4 = () => {
           <div className="w-[500px] flex flex-col items-start justify-start pt-0 px-0 pb-[18px] box-border max-w-full text-left text-base font-open-sans mq750:w-[77px]">
             <div className="w-[423px] flex flex-row items-start justify-between gap-[20px] max-w-full mq750:hidden">
               <div className="relative leading-[24px] font-semibold z-[1]">
-                Home
+                <a href="/" className="text-inherit no-underline">
+                  Home
+                </a>
               </div>
               <div className="relative leading-[24px] font-semibold whitespace-nowrap z-[1]">
-                Who we are?
+                <a href="#whoAreWe" className="text-inherit no-underline">
+                  Who we are?
+                </a>
               </div>
               <div className="relative leading-[24px] font-semibold whitespace-nowrap z-[1]">
-                Invest Now
+                <a href="#investNow" className="text-inherit no-underline">
+                  Invest Now
+                </a>
               </div>
               <div className="relative leading-[24px] font-semibold z-[1]">
-                Contact
+                <a href="#contact" className="text-inherit no-underline">
+                  Contact
+                </a>
               </div>
             </div>
           </div>
@@ -110,4 +118,4 @@ const FrameComponent4 = () => {
   );
 };
 
-export default FrameComponent4;
+export default HeroSection;
