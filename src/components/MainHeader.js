@@ -28,10 +28,10 @@ const MainHeader = () => {
               Quick Access
             </div>
             <div className="flex flex-col items-start justify-start gap-[20px] text-mini text-black-b300 font-open-sans">
-              <div className="relative leading-[24px]">Home</div>
-              <div className="relative leading-[24px]">Who we are?</div>
-              <div className="relative leading-[24px]">Invest Noe</div>
-              <div className="relative leading-[24px]">Contact Us</div>
+              <div className="relative leading-[24px] cursor-pointer">Home</div>
+              <div className="relative leading-[24px] cursor-pointer">Who we are?</div>
+              <div className="relative leading-[24px] cursor-pointer">Invest Noe</div>
+              <div className="relative leading-[24px] cursor-pointer">Contact Us</div>
             </div>
           </div>
           <div className="flex flex-col items-start justify-start gap-[35px]">

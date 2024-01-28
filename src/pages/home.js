@@ -69,7 +69,7 @@ const HomePage = () => {
           <ProjectAccessFrame />
         </div>
       </section>
-      <SubscribeNowSection />
+      {/* <SubscribeNowSection /> */}
       <MainHeader />
     </div>
   );

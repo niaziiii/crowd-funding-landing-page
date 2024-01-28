@@ -11,7 +11,7 @@ const ProjectAccessFrame = () => {
           type="text"
         />
         <img
-          className="h-[42px] w-[42px] relative z-[1]"
+          className="h-[42px] w-[42px] relative z-[1] cursor-pointer"
           alt=""
           src="/group-1171275759-1.svg"
         />
@@ -30,7 +30,7 @@ const ProjectAccessFrame = () => {
           How this technology works?
         </div>
         <img
-          className="h-[42px] w-[42px] relative z-[1]"
+          className="h-[42px] w-[42px] relative z-[1] cursor-pointer"
           alt=""
           src="/group-1171275759-1.svg"
         />

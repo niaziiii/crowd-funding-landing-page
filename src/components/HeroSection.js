@@ -100,7 +100,7 @@ const HeroSection = () => {
                     Invest Now
                   </b>
                 </button>
-                <div className="flex flex-row items-center justify-start gap-[8px]">
+                {/* <div className="flex flex-row items-center justify-start gap-[8px]">
                   <img
                     className="h-[26px] w-[26px] relative overflow-hidden shrink-0 z-[1]"
                     loading="eager"
@@ -108,7 +108,7 @@ const HeroSection = () => {
                     src="/frame.svg"
                   />
                   <b className="relative z-[1]">Watch Video</b>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

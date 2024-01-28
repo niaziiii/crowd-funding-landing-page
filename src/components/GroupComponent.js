@@ -6,7 +6,7 @@ const GroupComponent = ({ howCanIStartACrowdfunding, group1171275759 }) => {
         {howCanIStartACrowdfunding}
       </div>
       <img
-        className="h-[42px] w-[42px] relative z-[1]"
+        className="h-[42px] w-[42px] relative z-[1] cursor-pointer"
         loading="eager"
         alt=""
         src={group1171275759}

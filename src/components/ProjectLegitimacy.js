@@ -19,7 +19,7 @@ const ProjectLegitimacy = () => {
             and scrambled it to make a type specimen book.
           </div>
         </div>
-        <div className="flex flex-row items-start justify-start gap-[8px] text-base text-primary font-open-sans">
+        <div className="flex flex-row items-start justify-start gap-[8px] cursor-pointer text-base text-primary font-open-sans">
           <div className="relative [text-decoration:underline] leading-[24px] font-semibold z-[1]">
             Learn more about us
           </div>

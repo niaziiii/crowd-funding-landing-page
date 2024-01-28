@@ -53,12 +53,14 @@ const LinkFrame = ({ imageFrame, techWall, buttonFrame, group1171276002 }) => {
             Min Investment: $500
           </div>
         </div>
-        <img
-          className="h-[35px] w-[59.5px] relative object-contain z-[2]"
-          loading="eager"
-          alt=""
-          src={group1171276002}
-        />
+        <button className="cursor-pointer [border:none] text-white py-2 px-5 bg-secondary rounded-full flex flex-row items-center justify-center whitespace-nowrap z-[1] hover:bg-darkgoldenrod">
+          <img
+            className=" w-6 hover:w-7  z-[2]"
+            loading="eager"
+            alt=""
+            src='/arrow.svg'
+          />
+        </button>
       </div>
     </div>
   );
