@@ -13,17 +13,6 @@ import Footer from "../components/footer";
 const HomePage = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-0 px-0 pb-[29px] box-border tracking-[normal]">
-      <img
-        className="w-[368px] h-[412.7px] my-0 mx-[!important] absolute right-[-218px] bottom-[523.3px] object-contain opacity-[0.05]"
-        loading="eager"
-        alt=""
-        src="/frame-1171275836@2x.png"
-      />
-      <img
-        className="w-[411px] h-[426.2px] my-0 mx-[!important] absolute top-[1778px] left-[-267px] object-contain opacity-[0.06]"
-        alt=""
-        src="/group@2x.png"
-      />
 
       <HeroSection />
       <ProjectLegitimacy />
