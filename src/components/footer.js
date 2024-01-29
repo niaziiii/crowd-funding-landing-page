@@ -1,4 +1,4 @@
-const MainHeader = () => {
+const Footer = () => {
   return (
     <footer className="w-[1280px] flex flex-row items-start justify-start py-0 px-5 box-border relative max-w-full shrink-0 text-left text-xl text-secondary font-montserrat">
       <img
@@ -67,7 +67,7 @@ const MainHeader = () => {
               Copyright © 2024 All rights reserved.
             </div>
             <img
-              className="h-[34px] w-[190px] relative"
+              className="h-[34px] w-[190px] relative cursor-pointer"
               alt=""
               src="/group-705.svg"
             />
@@ -78,4 +78,4 @@ const MainHeader = () => {
   );
 };
 
-export default MainHeader;
+export default Footer;

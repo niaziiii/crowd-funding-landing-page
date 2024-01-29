@@ -7,7 +7,7 @@ import FrameComponent from "../components/FrameComponent";
 import HowToStart from "../components/HowToStart";
 import ProjectAccessFrame from "../components/ProjectAccessFrame";
 import SubscribeNowSection from "../components/SubscribeNowSection";
-import MainHeader from "../components/MainHeader";
+import Footer from "../components/footer";
 
 
 const HomePage = () => {
@@ -39,7 +39,7 @@ const HomePage = () => {
           </h1>
           <div className="self-stretch relative text-lg leading-[28px] font-open-sans text-black-b300">{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
         </div>
-        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[20px] max-w-full">
+        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[25px] max-w-full">
           <FrameComponent
             group1171275689="/group-1171275689.svg"
             group283="/group-283.svg"
@@ -71,7 +71,7 @@ const HomePage = () => {
         </div>
       </section>
       {/* <SubscribeNowSection /> */}
-      <MainHeader />
+      <Footer />
     </div>
   );
 };
