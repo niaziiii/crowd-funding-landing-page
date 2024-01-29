@@ -1,6 +1,16 @@
 import Text1 from "./Text1";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 
 const HeroSection = () => {
+  const scrollToSection = (sectionId) => {
+    scroll.scrollTo(sectionId, {
+      smooth: true,
+      duration: 500,
+      offset: -50,
+    });
+  };
+
   return (
     <section
       className="self-stretch flex flex-row items-start justify-start relative max-w-full shrink-0 text-left text-5xl text-white  font-montserrat bg-cover bg-center min-h-screen"
@@ -51,24 +61,54 @@ const HeroSection = () => {
           <div className="w-[500px] flex flex-col items-start justify-start pt-0 px-0 pb-[18px] box-border max-w-full text-left text-base font-open-sans mq750:w-[77px]">
             <div className="w-[423px] flex flex-row items-start justify-between gap-[20px] max-w-full mq750:hidden">
               <div className="relative leading-[24px] font-semibold z-[1]">
-                <a href="/" className="text-inherit no-underline">
+                <ScrollLink
+                  to="#"
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
+                  onClick={() => scrollToSection("whoAreWe")}
+                  className="cursor-pointer"
+                >
                   Home
-                </a>
+                </ScrollLink>
               </div>
               <div className="relative leading-[24px] font-semibold whitespace-nowrap z-[1]">
-                <a href="#whoAreWe" className="text-inherit no-underline">
+                <ScrollLink
+                  to="whoAreWe"
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
+                  onClick={() => scrollToSection("whoAreWe")}
+                  className="cursor-pointer"
+                >
                   Who we are?
-                </a>
+                </ScrollLink>
+
               </div>
               <div className="relative leading-[24px] font-semibold whitespace-nowrap z-[1]">
-                <a href="#investNow" className="text-inherit no-underline">
+
+                <ScrollLink
+                  to="investNow"
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
+                  onClick={() => scrollToSection("investNow")}
+                  className="cursor-pointer"
+                >
                   Invest Now
-                </a>
+                </ScrollLink>
               </div>
               <div className="relative leading-[24px] font-semibold z-[1]">
-                <a href="#contact" className="text-inherit no-underline">
+                <ScrollLink
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
+                  onClick={() => scrollToSection("contact")}
+                  className="cursor-pointer"
+                >
                   Contact
-                </a>
+                </ScrollLink>
               </div>
             </div>
           </div>

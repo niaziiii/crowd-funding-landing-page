@@ -9,6 +9,7 @@ import ProjectAccessFrame from "../components/ProjectAccessFrame";
 import SubscribeNowSection from "../components/SubscribeNowSection";
 import MainHeader from "../components/MainHeader";
 
+
 const HomePage = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-0 px-0 pb-[29px] box-border tracking-[normal]">
