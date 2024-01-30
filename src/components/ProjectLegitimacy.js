@@ -1,6 +1,6 @@
 const ProjectLegitimacy = () => {
   return (
-    <section className="self-stretch bg-secondary-s10 flex flex-row items-center justify-start pt-[212px] pb-[78px] pr-[120px] pl-[154px] box-border gap-[172px] max-w-full shrink-0 text-left text-21xl text-secondary font-montserrat lg:flex-wrap lg:gap-[86px] lg:pl-[77px] lg:pr-[60px] lg:box-border mq450:gap-[21px] mq450:pt-[90px] mq450:pb-[33px] mq450:box-border mq1050:pt-[138px] mq1050:pb-[51px] mq1050:box-border mq750:gap-[43px] mq750:pl-[38px] mq750:pr-[30px] mq750:box-border">
+    <section className="self-stretch bg-secondary-s10 flex flex-row items-center justify-start pt-[212px] pb-[78px] pr-[120px] pl-[154px] box-border gap-[172px] max-w-full shrink-0 text-left text-21xl text-secondary font-montserrat lg:flex-wrap lg:gap-[86px] lg:pl-[77px] lg:pr-[60px] lg:box-border mq450:mt-14 mq450:gap-[21px] mq450:pt-[90px] mq450:pb-[33px] mq450:box-border mq1050:pt-[138px] mq1050:pb-[51px] mq1050:box-border mq750:gap-[43px] mq750:pl-[38px] mq750:pr-[30px] mq750:box-border">
       {/* <div className="h-[777px] w-[1440px] relative bg-secondary-s10 hidden max-w-full" /> */}
       <div
         id="whoAreWe"

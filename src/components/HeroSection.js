@@ -1,14 +1,21 @@
+import { useState } from "react";
 import Text1 from "./Text1";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 
 const HeroSection = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   const scrollToSection = (sectionId) => {
     scroll.scrollTo(sectionId, {
       smooth: true,
       duration: 500,
       offset: -50,
     });
+    setIsMenuOpen(false)
   };
 
   return (
@@ -22,6 +29,7 @@ const HeroSection = () => {
         group1171276033="/group-1171276033@2x.png"
         loremIpsumIsLeft="185px"
         loremIpsumIsBackgroundImage="url('/rectangle-68@2x.png')"
+        display='flex'
       />
       <Text1
         rectangle68="/rectangle-69@2x.png"
@@ -30,94 +38,162 @@ const HeroSection = () => {
         loremIpsumIsLeft="unset"
         loremIpsumIsBackgroundImage="url('/rectangle-69@2x.png')"
         loremIpsumIsRight="185px"
+        display='flex lg:hidden mq1050:hidden mq750:hidden mq450:hidden'
       />
-      <img
-        className="h-[37.6px] w-[39.9px] absolute my-0 mx-[!important] top-[261px] right-[-16.9px] object-contain opacity-[0.5] z-[1]"
-        loading="eager"
-        alt=""
-        src="/group-53@2x.png"
-      />
-      <div className="flex-1 flex flex-col items-center justify-start pt-[50px] pb-[284px] pr-5 pl-[89px] box-border relative gap-[131px] bg-cover bg-no-repeat bg-[top] max-w-full text-center text-37xl lg:gap-[65px] lg:pl-11 lg:box-border mq450:gap-[16px] mq450:pt-[21px] mq450:pb-[120px] mq450:box-border mq1050:pt-8 mq1050:pb-[185px] mq1050:box-border mq750:gap-[33px] mq750:pl-[22px] mq750:box-border">
-        <img
-          className="w-[1440px] relative max-h-full object-cover hidden max-w-full z-[0]"
-          alt=""
-          src="/rectangle-1@2x.png"
-        />
-        <header className="w-[1171px] h-[58px] flex flex-row items-end justify-between gap-[20px] top-[0] z-[99] sticky max-w-full text-center text-mini text-white font-montserrat">
-          <div className="w-[121px] flex flex-row items-start justify-start relative">
-            <b className="h-[11px] absolute my-0 mx-[!important] right-[-114px] bottom-[13px] leading-[24px] inline-block whitespace-nowrap z-[1]">
-              Estrategias de Investimentos
-            </b>
-            <img
-              className="w-[91px] absolute my-0 mx-[!important] bottom-[-36px] left-[-73px] h-[108px] object-cover z-[2]"
-              loading="eager"
-              alt=""
-              src="/logo-dourado-1@2x.png"
-            />
-            <b className="h-12 flex-1 relative text-xl leading-[24px] inline-block whitespace-nowrap z-[3]">
-              YOUNIIT.Y
-            </b>
-          </div>
-          <div className="w-[500px] flex flex-col items-start justify-start pt-0 px-0 pb-[18px] box-border max-w-full text-left text-base font-open-sans mq750:w-[77px]">
-            <div className="w-[423px] flex flex-row items-start justify-between gap-[20px] max-w-full mq750:hidden">
-              <div className="relative leading-[24px] font-semibold z-[1]">
-                <ScrollLink
-                  to="#"
-                  smooth={true}
-                  duration={500}
-                  offset={-50}
-                  onClick={() => scrollToSection("whoAreWe")}
-                  className="cursor-pointer"
-                >
-                  Home
-                </ScrollLink>
-              </div>
-              <div className="relative leading-[24px] font-semibold whitespace-nowrap z-[1]">
-                <ScrollLink
-                  to="whoAreWe"
-                  smooth={true}
-                  duration={500}
-                  offset={-50}
-                  onClick={() => scrollToSection("whoAreWe")}
-                  className="cursor-pointer"
-                >
-                  Who we are?
-                </ScrollLink>
+      <div className="flex-1 flex flex-col items-center justify-start pt-[10px] pb-[284px] pr-5 pl-[10px] box-border relative gap-[131px] bg-cover bg-no-repeat bg-[top] max-w-full text-center text-37xl  lg:pl-11 lg:box-border  mq450:pt-[4px] mq450:pb-[120px] mq450:box-border mq1050:pt-8 mq1050:pb-[185px] mq1050:box-border  mq750:box-border">
+        <nav class="w-full">
+          <div class=" flex flex-wrap items-center justify-between p-4">
+            <div className="flex flex-row items-center justify-start">
+              <img
+                className="w-[91px] my-0 "
+                loading="eager"
+                alt=""
+                src="/logo-dourado-1@2x.png"
+              />
+              <div className="flex flex-col text-start">
+                <b className="text-2xl">
+                  YOUNIIT.Y
+                </b>
+                <b className="text-sm whitespace-nowrap ">
+                  Estrategias de Investimentos
+                </b>
 
-              </div>
-              <div className="relative leading-[24px] font-semibold whitespace-nowrap z-[1]">
-
-                <ScrollLink
-                  to="investNow"
-                  smooth={true}
-                  duration={500}
-                  offset={-50}
-                  onClick={() => scrollToSection("investNow")}
-                  className="cursor-pointer"
-                >
-                  Invest Now
-                </ScrollLink>
-              </div>
-              <div className="relative leading-[24px] font-semibold z-[1]">
-                <ScrollLink
-                  to="contact"
-                  smooth={true}
-                  duration={500}
-                  offset={-50}
-                  onClick={() => scrollToSection("contact")}
-                  className="cursor-pointer"
-                >
-                  Contact
-                </ScrollLink>
               </div>
             </div>
+            <div className="w-[500px] flex flex-col items-start justify-start pt-0 px-0 pb-[18px] box-border max-w-full text-left text-base font-open-sans mq750:w-[77px]">
+              <div className="w-[423px] flex flex-row items-start justify-between gap-[20px] max-w-full mq750:hidden">
+                <div className="relative leading-[24px] font-semibold z-[1]">
+                  <ScrollLink
+                    to="#"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
+                    onClick={() => scrollToSection("whoAreWe")}
+                    className="cursor-pointer"
+                  >
+                    Home
+                  </ScrollLink>
+                </div>
+                <div className="relative leading-[24px] font-semibold whitespace-nowrap z-[1]">
+                  <ScrollLink
+                    to="whoAreWe"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
+                    onClick={() => scrollToSection("whoAreWe")}
+                    className="cursor-pointer"
+                  >
+                    Who we are?
+                  </ScrollLink>
+
+                </div>
+                <div className="relative leading-[24px] font-semibold whitespace-nowrap z-[1]">
+
+                  <ScrollLink
+                    to="investNow"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
+                    onClick={() => scrollToSection("investNow")}
+                    className="cursor-pointer"
+                  >
+                    Invest Now
+                  </ScrollLink>
+                </div>
+                <div className="relative leading-[24px] font-semibold z-[1]">
+                  <ScrollLink
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
+                    onClick={() => scrollToSection("contact")}
+                    className="cursor-pointer"
+                  >
+                    Contact
+                  </ScrollLink>
+                </div>
+              </div>
+            </div>
+            <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+              <button
+                className="cursor-pointer py-4 pr-[25px] pl-[29px] bg-[transparent] w-[114px] rounded-3xs box-border flex flex-row items-center justify-center whitespace-nowrap z-[1] border-[1px] border-solid border-white hover:bg-gainsboro-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100"
+                onClick={toggleMenu}
+              >
+                <b className="relative text-base leading-[24px] font-open-sans text-white text-left">
+                  Sign In
+                </b>
+              </button>
+              <button
+                data-collapse-toggle="navbar-cta"
+                type="button"
+                className="mq750:inline-flex items-center p-2 w-10 h-10 bg-gray-700 mt-2 justify-center text-sm text-gray-500 rounded-lg hidden hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                aria-controls="navbar-cta"
+                aria-expanded={isMenuOpen}
+                onClick={toggleMenu}
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Responsive menu */}
+            <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? "block" : "hidden"}`} id="navbar-cta">
+              <ul className="flex flex-col text-lg font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-950 md:space-x-8 rtl:space-x-reverse list-none">
+                <li className="py-2">
+                  <ScrollLink
+                    to="#"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
+                    onClick={() => scrollToSection("whoAreWe")}
+                    className="cursor-pointer"
+                  >
+                    Home
+                  </ScrollLink>
+                </li>
+                <li className="py-2">
+                  <ScrollLink
+                    to="whoAreWe"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
+                    onClick={() => scrollToSection("whoAreWe")}
+                    className="cursor-pointer"
+                  >
+                    Who we are?
+                  </ScrollLink>
+                </li>
+                <li className="py-2">
+                  <ScrollLink
+                    to="investNow"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
+                    onClick={() => scrollToSection("investNow")}
+                    className="cursor-pointer"
+                  >
+                    Invest Now
+                  </ScrollLink>
+                </li>
+                <li className="py-2">
+                  <ScrollLink
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
+                    onClick={() => scrollToSection("contact")}
+                    className="cursor-pointer"
+                  >
+                    Contact
+                  </ScrollLink>
+                </li>
+              </ul>
+            </div>
           </div>
-          <button className="cursor-pointer py-4 pr-[25px] pl-[29px] bg-[transparent] w-[114px] rounded-3xs box-border flex flex-row items-center justify-center whitespace-nowrap z-[1] border-[1px] border-solid border-white hover:bg-gainsboro-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100">
-            <b className="relative text-base leading-[24px] font-open-sans text-white text-left">
-              Sign In
-            </b>
-          </button>
-        </header>
+        </nav>
+
         <img
           className="w-[39.9px] h-[37.6px] absolute my-0 mx-[!important] top-[201px] left-[316px] object-contain opacity-[0.5] z-[1]"
           loading="eager"
@@ -140,21 +216,13 @@ const HeroSection = () => {
                     Invest Now
                   </b>
                 </button>
-                {/* <div className="flex flex-row items-center justify-start gap-[8px]">
-                  <img
-                    className="h-[26px] w-[26px] relative overflow-hidden shrink-0 z-[1]"
-                    loading="eager"
-                    alt=""
-                    src="/frame.svg"
-                  />
-                  <b className="relative z-[1]">Watch Video</b>
-                </div> */}
+
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 
