@@ -40,10 +40,10 @@ const HeroSection = () => {
         loremIpsumIsRight="185px"
         display='flex lg:hidden mq1050:hidden mq750:hidden mq450:hidden'
       />
-      <div className="flex-1 flex flex-col items-center justify-start pt-[10px] pb-[284px] pr-5 pl-[10px] box-border relative gap-[131px] bg-cover bg-no-repeat bg-[top] max-w-full text-center text-37xl  lg:pl-11 lg:box-border  mq450:pt-[4px] mq450:pb-[120px] mq450:box-border mq1050:pt-8 mq1050:pb-[185px] mq1050:box-border  mq750:box-border">
+      <div className="flex-1 flex flex-col items-center justify-start pt-[10px] pb-[284px] pr-5 box-border relative gap-[131px] bg-cover bg-no-repeat bg-[top] max-w-full text-center text-37xl  lg:pl-11 lg:box-border  mq450:pt-[4px] mq450:pb-[120px] mq450:box-border mq1050:pt-8 mq1050:pb-[185px] mq1050:box-border  mq750:box-border">
         <nav class="w-full">
-          <div class=" flex flex-wrap items-center justify-between p-4">
-            <div className="flex flex-row items-center justify-start">
+          <div class=" flex items-center justify-between p-1">
+            <div className="flex flex-row items-center justify-start" >
               <img
                 className="w-[91px] my-0 "
                 loading="eager"
@@ -54,7 +54,7 @@ const HeroSection = () => {
                 <b className="text-2xl">
                   YOUNIIT.Y
                 </b>
-                <b className="text-sm whitespace-nowrap ">
+                <b className="text-sm whitespace-normal ">
                   Estrategias de Investimentos
                 </b>
 
@@ -116,7 +116,7 @@ const HeroSection = () => {
             </div>
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
               <button
-                className="cursor-pointer py-4 pr-[25px] pl-[29px] bg-[transparent] w-[114px] rounded-3xs box-border flex flex-row items-center justify-center whitespace-nowrap z-[1] border-[1px] border-solid border-white hover:bg-gainsboro-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100"
+                className="cursor-pointer py-4 pr-[25px] pl-[29px] bg-[transparent] w-[114px] rounded-3xs box-border flex flex-row items-center justify-center whitespace-nowrap z-[1] border-[1px] border-solid border-white hover:bg-gainsboro-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100 mq750:hidden"
               >
                 <b className="relative text-base leading-[24px] font-open-sans text-white text-left">
                   Sign In
@@ -125,7 +125,7 @@ const HeroSection = () => {
               <button
                 data-collapse-toggle="navbar-cta"
                 type="button"
-                className="mq750:inline-flex items-center p-2 w-10 h-10 bg-gray-700 mt-2 justify-center text-sm text-gray-500 rounded-lg hidden hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                className="mq750:inline-flex relative items-center p-2 w-10 h-10 bg-gray-700 mt-2 justify-center text-sm text-gray-500 rounded-lg hidden hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
                 aria-controls="navbar-cta"
                 aria-expanded={isMenuOpen}
                 onClick={toggleMenu}
@@ -138,7 +138,7 @@ const HeroSection = () => {
             </div>
 
             {/* Responsive menu */}
-            <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? "block" : "hidden"}`} id="navbar-cta">
+            <div className={`absolute top-28 items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? "block" : "hidden"} z-20`} id="navbar-cta">
               <ul className="flex flex-col text-lg font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-950 md:space-x-8 rtl:space-x-reverse list-none">
                 <li className="py-2">
                   <ScrollLink
@@ -188,6 +188,9 @@ const HeroSection = () => {
                     Contact
                   </ScrollLink>
                 </li>
+                <li className="py-2 cursor-pointer">
+                  Sign In
+                </li>
               </ul>
             </div>
           </div>
@@ -201,11 +204,11 @@ const HeroSection = () => {
         />
         <div className="w-[807px] flex flex-row items-start justify-start max-w-full">
           <div className="w-[737px] flex flex-col items-center justify-start gap-[84px] max-w-full mq450:gap-[21px] mq750:gap-[42px]">
-            <h1 className="m-0 self-stretch h-[68px] relative text-inherit font-bold font-inherit inline-block z-[1] mq450:text-15xl mq1050:text-26xl">
+            <h1 className="m-0 self-stretch h-[68px] relative text-inherit font-bold font-inherit inline-block  mq450:text-15xl mq1050:text-26xl">
               Investment Strategies
             </h1>
             <div className="w-[517px] flex flex-col items-center justify-start gap-[40px] max-w-full text-base font-open-sans mq750:gap-[20px]">
-              <div className="self-stretch relative leading-[24px] font-semibold z-[1]">
+              <div className="self-stretch relative leading-[24px] font-semibold ">
                 Join a global community of visionaries, backers, and creators
                 who are changing the world, one project at a time.
               </div>
