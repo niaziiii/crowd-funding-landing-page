@@ -19,7 +19,7 @@ const Text1 = ({
 
   return (
     <div
-      className={`w-[440px] my-0 mx-[!important] absolute bottom-[-152px] left-[186px] mq750:left-0 rounded-mini ${display} flex-col items-start justify-start p-8 box-border gap-[32px] bg-cover bg-no-repeat bg-[top] max-w-full z-[1] text-left text-5xl text-white font-montserrat`}
+      className={`w-[440px] my-0 mx-[!important] absolute bottom-[-152px] left-[186px] mq750:left-20 mq450:left-0 rounded-mini ${display} flex-col items-start justify-start p-8 box-border gap-[32px] bg-cover bg-no-repeat bg-[top] max-w-full z-[1] text-left text-5xl text-white font-montserrat`}
       style={textStyle}
     >
       <div className="w-[339px] flex flex-col items-start justify-start gap-[15px] max-w-full">

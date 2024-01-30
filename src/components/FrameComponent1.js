@@ -1,22 +1,10 @@
 const FrameComponent1 = () => {
   return (
-    <section className="self-stretch flex flex-row items-start justify-start relative max-w-full shrink-0 text-left text-mini-4 text-black-b100 font-open-sans">
-      <img
-        className="h-[412.7px] w-[368px] my-0 mx-[!important] absolute bottom-[-382.7px] left-[-236px] object-contain opacity-[0.05]"
-        loading="eager"
-        alt=""
-        src="/frame-1171275836@2x.png"
-      />
+    <section className="self-stretch flex flex-row items-start justify-start  max-w-full shrink-0 text-left text-mini-4 text-black-b100 font-open-sans">
       <div className="flex-1 flex flex-row items-start justify-start pt-0 px-0 pb-[110px] box-border max-w-full mq750:pb-[71px] mq750:box-border">
-        <div className="flex-1 flex flex-row items-start justify-start relative max-w-full">
-          <img
-            className="h-[426.2px] w-[411px] my-0 mx-[!important] absolute top-[-269px] right-[-263px] object-contain opacity-[0.06]"
-            loading="eager"
-            alt=""
-            src="/frame-1171275834@2x.png"
-          />
-          <div className="flex-1 bg-secondary-s10 flex flex-row items-start justify-start pt-[100px] pb-[101px] pr-[140px] pl-[295px] box-border gap-[78px] max-w-full z-[1] lg:flex-wrap mq450:gap-[19px] mq450:pl-5 mq450:pr-5 mq450:box-border mq750:gap-[39px] mq750:pt-[65px] mq750:pb-[66px] mq750:pr-[70px] mq750:pl-[147px] mq750:box-border">
-            <div className="h-[583px] w-[1440px] relative bg-secondary-s10 hidden max-w-full" />
+        <div className="flex-1 flex flex-row  items-start justify-start flex-wrap max-w-full">
+          <div className="flex-1 bg-secondary-s10 flex flex-row items-start justify-start pt-[100px] pb-[101px] pr-[140px] pl-[295px] box-border gap-[78px] max-w-full z-[1] flex-wrap mq450:gap-[19px] mq450:pl-5 mq450:pr-5 mq450:box-border mq750:gap-[39px] mq750:pt-[65px] mq750:pb-[66px] mq750:pr-[70px] mq750:pl-[147px] mq750:box-border">
+
             <div className="w-[408px] flex flex-col items-center justify-center min-w-[408px] max-w-full lg:flex-1 mq1050:min-w-full">
               <div className="self-stretch rounded-2xl bg-white shadow-[0px_1.6px_4.8px_rgba(13,_10,_44,_0.08)] flex flex-col items-center justify-start pt-[25px] pb-[26px] pr-[26px] pl-[27px] box-border relative gap-[14px] max-w-full z-[1] mq450:pt-5 mq450:pb-5 mq450:box-border">
                 <div className="w-[408px] h-[382.1px] relative rounded-2xl bg-white shadow-[0px_1.6px_4.8px_rgba(13,_10,_44,_0.08)] hidden max-w-full z-[0]" />
