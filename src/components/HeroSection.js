@@ -27,7 +27,7 @@ const HeroSection = () => {
         rectangle68="/rectangle-68@2x.png"
         catalyzeYourDreams="Catalyze Your Dreams"
         group1171276033="/group-1171276033@2x.png"
-        loremIpsumIsLeft="185px"
+        // loremIpsumIsLeft="185px"
         loremIpsumIsBackgroundImage="url('/rectangle-68@2x.png')"
         display='flex'
       />
@@ -117,7 +117,6 @@ const HeroSection = () => {
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
               <button
                 className="cursor-pointer py-4 pr-[25px] pl-[29px] bg-[transparent] w-[114px] rounded-3xs box-border flex flex-row items-center justify-center whitespace-nowrap z-[1] border-[1px] border-solid border-white hover:bg-gainsboro-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100"
-                onClick={toggleMenu}
               >
                 <b className="relative text-base leading-[24px] font-open-sans text-white text-left">
                   Sign In
