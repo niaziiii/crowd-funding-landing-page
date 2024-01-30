@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="w-[1280px] flex flex-row items-start justify-start py-0 px-5 box-border relative max-w-full shrink-0 text-left text-xl text-secondary font-montserrat">
+    <footer id="contact" className="w-[1280px] flex flex-row items-start justify-start py-0 px-5 box-border relative max-w-full shrink-0 text-left text-xl text-secondary font-montserrat">
       <img
         className="h-[504px] w-[257px] my-0 mx-[!important] absolute bottom-[-133px] left-[-97px] object-contain opacity-[0.03]"
         alt=""
