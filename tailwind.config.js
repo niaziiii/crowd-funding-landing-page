@@ -24,8 +24,8 @@ module.exports = {
         "primary-p40": "#f6f2e3",
         "black-b500": "#4b4b4b",
         gainsboro: {
-          "100": "#e6e6e6",
-          "200": "rgba(230, 230, 230, 0.09)",
+          100: "#e6e6e6",
+          200: "rgba(230, 230, 230, 0.09)",
         },
         "black-b10": "#fafafa",
       },
@@ -73,13 +73,19 @@ module.exports = {
     screens: {
       lg: {
         max: "1200px",
-        min: "1050px"
+        min: "1050px",
       },
       mq1050: {
         raw: "screen and (max-width: 1050px)",
       },
       mq750: {
         raw: "screen and (max-width: 750px)",
+      },
+      mq900: {
+        raw: "screen and (max-width: 900px)",
+      },
+      mq1024: {
+        raw: "screen and (max-width: 1024px)",
       },
       mq450: {
         raw: "screen and (max-width: 450px)",
