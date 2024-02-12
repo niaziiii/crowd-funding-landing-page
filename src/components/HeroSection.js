@@ -22,23 +22,26 @@ const HeroSection = () => {
       className="self-stretch flex flex-row items-start justify-start relative max-w-full shrink-0 text-left text-5xl text-white  font-montserrat bg-cover bg-center min-h-screen"
       style={{ backgroundImage: "url(/rectangle-1.png)" }}
     >
-      <Text1
-        rectangle68="/rectangle-68@2x.png"
-        catalyzeYourDreams="Catalyze Your Dreams"
-        group1171276033="/group-1171276033@2x.png"
-        // loremIpsumIsLeft="185px"
-        loremIpsumIsBackgroundImage="url('/rectangle-68@2x.png')"
-        display="flex"
-      />
-      <Text1
-        rectangle68="/rectangle-69@2x.png"
-        catalyzeYourDreams="Invest with Confidence"
-        group1171276033="/group-1171276033@2x.png"
-        loremIpsumIsLeft="unset"
-        loremIpsumIsBackgroundImage="url('/rectangle-69@2x.png')"
-        loremIpsumIsRight="185px"
-        display="flex lg:hidden mq1050:hidden mq750:hidden mq450:hidden"
-      />
+      <div className="w-full gap-20 mq1050:gap-0 mq750:gap-0 mq450:gap-0 absolute bottom-[-120px] left-0 flex items-center justify-center">
+        <Text1
+          rectangle68="/rectangle-68@2x.png"
+          catalyzeYourDreams="Catalyze Your Dreams"
+          group1171276033="/group-1171276033@2x.png"
+          // loremIpsumIsLeft="185px"
+          loremIpsumIsBackgroundImage="url('/rectangle-68@2x.png')"
+          display="flex"
+        />
+        <Text1
+          rectangle68="/rectangle-69@2x.png"
+          catalyzeYourDreams="Invest with Confidence"
+          group1171276033="/group-1171276033@2x.png"
+          loremIpsumIsLeft="unset"
+          loremIpsumIsBackgroundImage="url('/rectangle-69@2x.png')"
+          loremIpsumIsRight="185px"
+          display="flex lg:hidden mq1050:hidden mq750:hidden mq450:hidden"
+          left="50%"
+        />
+      </div>
       <div className="flex-1 flex flex-col items-center justify-start pt-[10px] pb-[284px] pr-5 box-border relative gap-[131px] bg-cover bg-no-repeat bg-[top] max-w-full text-center text-37xl  lg:pl-11 lg:box-border  mq450:pt-[4px] mq450:pb-[120px] mq450:box-border mq1050:pt-8 mq1050:pb-[185px] mq1050:box-border  mq1024:box-border">
         <nav class="w-full">
           <div class=" flex items-center p-1">
