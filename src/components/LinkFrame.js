@@ -55,10 +55,10 @@ const LinkFrame = ({ imageFrame, techWall, buttonFrame, group1171276002 }) => {
         </div>
         <button className="cursor-pointer [border:none] text-white py-2 px-5 bg-secondary rounded-full flex flex-row items-center justify-center whitespace-nowrap z-[1] hover:bg-darkgoldenrod">
           <img
-            className=" w-6 hover:w-7  z-[2]"
+            className=" w-6  z-[2]"
             loading="eager"
             alt=""
-            src='/arrow.svg'
+            src="/arrow.svg"
           />
         </button>
       </div>

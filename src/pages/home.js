@@ -52,7 +52,7 @@ const HomePage = () => {
           </h1>
           <div className="self-stretch relative text-lg leading-[28px] font-open-sans text-black-b300">{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. `}</div>
         </div>
-        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[20px] max-w-full">
+        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[20px] max-w-full mb-28">
           <HowToStart />
           <ProjectAccessFrame />
         </div>
